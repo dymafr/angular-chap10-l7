@@ -15,7 +15,6 @@ export class UserComponent implements OnInit {
   ngOnInit() {
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
       this.id = paramMap.get("id");
-      this.name = paramMap.get("name");
     });
   }
 }
